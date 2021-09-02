@@ -1,0 +1,232 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: url(../../images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background: url(../../images/bg-intro-desktop.png);
+    background-color: #ff7a7a;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #container {
+    margin: 120px 0 0 11.667vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 55%;
+        grid-template-columns: 45% 55%;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "intro right";
+  }
+}
+
+#intro {
+  margin: 100px 8vw 60px 8vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  #intro {
+    text-align: left;
+    grid-area: "intro";
+    margin: 110px 20px 60px 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #right {
+    grid-area: "right";
+    margin-right: 10.069vw;
+  }
+}
+
+#offer {
+  background-color: #6055a5;
+  margin: 0 5.333vw;
+  font-size: 0.66667rem;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  #offer {
+    margin: 0 20px;
+  }
+}
+
+#offer h2 {
+  margin: 0 13.333vw;
+  font-weight: 400;
+}
+
+#offer h2 span {
+  font-weight: 700;
+}
+
+#form {
+  background-color: white;
+  margin: 20px 5.333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  #form {
+    margin: 20px 20px;
+  }
+}
+
+#form p {
+  color: #b9b6d3;
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 16px 13.333vw;
+}
+
+#form p a {
+  color: #ff7a7a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.same {
+  width: 74.133vw;
+  height: 54px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  .same {
+    width: 31.250vw;
+  }
+}
+
+.input {
+  letter-spacing: 1px;
+  padding-left: 20px;
+  display: block;
+  border: 1px solid #b9b6d3;
+}
+
+@media screen and (min-width: 900px) {
+  .input {
+    padding-left: 30px;
+  }
+}
+
+.input:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+.cta {
+  background-color: #38cc8c;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  border-top: 1px solid #299968;
+  border-right: 2px solid #299968;
+  border-left: 2px solid #299968;
+  border-bottom: 4px solid #299968;
+}
+
+.cta:hover {
+  background-color: #41eca2;
+}
+
+.cta:active {
+  border: none;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control i {
+  color: black;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 25px;
+  right: 15px;
+  visibility: hidden;
+}
+
+.form-control small {
+  width: 97%;
+  display: inline-block;
+  color: black;
+  bottom: -10px;
+  left: 0;
+  text-align: right;
+  font-weight: 600;
+  display: none;
+}
+
+.success input {
+  border: 2px solid #38cc8c;
+}
+
+.error input {
+  border: 2px solid #ff7a7a;
+}
+
+.success i.fa-check-circle {
+  color: #38cc8c;
+  visibility: visible;
+}
+
+.error i.fa-exclamation-circle {
+  color: #ff7a7a;
+  visibility: visible;
+}
+
+.error small {
+  color: #ff7a7a;
+  display: inline-block;
+}
+
+@media screen and (min-width: 900px) {
+  #intro h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  #offer h2 {
+    margin: 0 50px;
+  }
+  #form p {
+    margin: 2px 20px 40px 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

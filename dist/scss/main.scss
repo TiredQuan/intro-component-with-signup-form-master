@@ -1,0 +1,168 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+@import 'base/reset';
+@import 'base/typography';
+#container {
+    @media screen and(min-width:$desktop){
+        margin: 120px 0 0 11.667vw;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "intro right";
+    }
+}
+#intro {
+    margin: 100px 8vw 60px 8vw;
+    text-align: center;
+    @media screen and(min-width:$desktop){
+        text-align: left;
+        grid-area: "intro";
+        margin: 110px 20px 60px 0;
+    }
+}
+#right {
+    @media screen and(min-width:$desktop){
+    grid-area: "right";
+    margin-right: 10.069vw;
+    }
+}
+#offer{
+    background-color: $blue;
+    margin: 0 5.333vw;
+    font-size: $font-size/1.5;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    @media screen and(min-width:$desktop){
+        margin: 0 20px;
+    }
+    
+    h2{
+        margin: 0 13.333vw;
+        font-weight: map-get($weights, thin );
+        span{
+            font-weight: map-get($weights, bold );
+        }
+    }
+}
+
+#form{
+    background-color: white;
+    margin: 20px 5.333vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 10px;
+    @media screen and(min-width:$desktop){
+    margin: 20px 20px;
+     }
+    p{
+        color: $grayish-blue;
+        font-size: $font-size*0.7;
+        text-align: center;
+        margin: 16px 13.333vw;
+        a {
+            color: $red;
+            font-weight: map-get($weights , bold );
+            text-decoration: none;
+        }
+    }
+}
+.same {
+    width: 74.133vw;
+    height: 54px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: map-get($weights, bold );
+    @media screen and(min-width:$desktop){
+        width: 31.250vw;
+    }
+}
+
+.input {
+    letter-spacing: 1px;
+    padding-left: 20px;
+    display: block;
+    border: 1px solid $grayish-blue;
+    @media screen and(min-width:$desktop){
+        padding-left: 30px;
+    }
+}
+.input:focus {
+    border: 2px solid black;
+    outline: none;
+}
+.cta {
+    background-color: $green;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: $font-size*0.9;
+    border-top: 1px solid hsl(154, 58%, 38%);
+    border-right: 2px solid hsl(154, 58%, 38%);
+    border-left: 2px solid hsl(154, 58%, 38%);
+    border-bottom: 4px solid hsl(154, 58%, 38%);
+}
+.cta:hover {
+    background-color: hsl(154, 82%, 59%);
+}
+.cta:active {
+    border: none;
+}
+.form-control {
+    position: relative;
+}
+.form-control i {
+    color: black;
+    position: absolute;
+    font-size: $font-size*1.5;
+    top: 25px;
+    right: 15px;
+    visibility: hidden;
+}
+.form-control small {
+    width: 97%;
+    display: inline-block;
+    color: black;
+    bottom: -10px;
+    left: 0;
+    text-align: right;
+    font-weight: map-get($weights, semi-bold );
+    display: none;
+}
+  .success  input{
+    border: 2px solid $green;
+}
+.error  input{
+    border: 2px solid $red;
+}
+.success i.fa-check-circle{
+    color: $green;
+    visibility: visible;
+}
+.error i.fa-exclamation-circle{
+    color: $red;
+    visibility: visible;
+}
+.error small {
+    color: $red;
+    display: inline-block;
+}
+@media screen and(min-width:$desktop){
+    #intro h1{
+        font-size: $font-size*3;
+        line-height: 1.2;
+    }
+    #offer h2 {
+        margin: 0 50px;
+    }
+    #form p {
+        margin: 2px 20px 40px 20px;
+}
+}

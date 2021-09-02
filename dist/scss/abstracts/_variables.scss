@@ -1,0 +1,45 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+$desktop: 900px;
+
+// ## Colors
+
+// ### Primary
+
+$red: hsl(0, 100%, 74%) ;
+$green: hsl(154, 59%, 51%);
+
+// ### Accent
+
+$blue: hsl(248, 32%, 49%);
+
+// ### Neutral
+
+$dark-blue: hsl(249, 10%, 26%) ;
+$grayish-blue: hsl(246, 25%, 77%);
+
+// ## Typography
+
+// ### Body Copy
+
+$font-size: 1rem;
+
+// ### Font
+
+// - Weights: 400, 500, 600, 700
+$weights: (
+    "thin":400,
+    "regular":500,
+    "semi-bold":600,
+    "bold":700,
+)
+
+
+
+// font-family: 'Poppins', sans-serif;
